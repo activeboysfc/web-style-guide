@@ -1,0 +1,49 @@
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+// Use Sass lighten function and add hover effect by nesting
+.default {
+  background-color: $color-accent;
+   &:hover {
+     background-color: lighten($color-accent, 15%);
+     transition: background-color .2s ease-in-out;
+   }
+}
+
+.error {
+  background-color: $color-error;
+   &:hover {
+    background-color: lighten($color-error, 15%);
+    transition: background-color .2s ease-in-out;
+  }
+}
+
+.info {
+  background-color: $color-info;
+   &:hover {
+    background-color: lighten($color-info, 15%);
+    transition: background-color .2s ease-in-out;
+  }
+}
+
+.success {
+  background-color: $color-sucess;
+   &:hover {
+    background-color: lighten($color-sucess, 15%);
+    transition: background-color .2s ease-in-out;
+  }
+}
+
+.warning {
+  background-color: $color-warning;
+   &:hover {
+    background-color: lighten($color-warning, 15%);
+    transition: background-color .2s ease-in-out;
+  }
+}
